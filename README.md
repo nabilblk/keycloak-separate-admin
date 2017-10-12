@@ -9,4 +9,5 @@ docker run --name keycloak \
            -e KEYCLOAK_USER=admin \
            -e KEYCLOAK_PASSWORD=admin \
            jboss/keycloak
+open http://$(docker-machine ip keycloak-admin):8080/auth
 ```
